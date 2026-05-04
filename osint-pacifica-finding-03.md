@@ -1,6 +1,6 @@
 # Security Finding — Passive OSINT Report
 ## Finding #3: Critical CVE on Local Business Web Server
-## Target: Axle Surgeons of California, Inc. — axlerepair.com
+## Target: [REDACTED — responsible disclosure sent 2026-05-04, 90-day embargo active]
 ## Date: 2026-05-04
 ## Researcher: Drake Sadosky
 ## Method: Passive recon only — no exploitation, no unauthorized access
@@ -19,14 +19,12 @@ on a shared hosting server that also handles business email.
 
 | Field | Value |
 |---|---|
-| Business | Axle Surgeons of California, Inc. |
-| Address | 690 Roberts Rd #210, Pacifica, CA 94044 |
-| Phone | (650) 738-0945 |
-| Email | info@axlerepair.com |
-| Website | axlerepair.com |
+| Business | [REDACTED — embargo active until 2026-08-02] |
+| Industry | Automotive / Commercial truck repair |
+| Location | Pacifica, CA 94044 |
 | Hosting | Bluehost shared hosting |
 | Server IP | [REDACTED] |
-| Hostname | box5424.bluehost.com |
+| Hostname | [REDACTED].bluehost.com |
 
 ---
 
@@ -114,7 +112,8 @@ without triggering SPF failures. Enables phishing of customers and vendors.
 ## Disclosure
 
 - **Responsible disclosure email sent:** 2026-05-04
-- **Sent to:** info@axlerepair.com
+- **Sent to:** [REDACTED]
+- **Embargo expires:** 2026-08-02 (90 days)
 - **Action recommended:** Contact Bluehost support, reference CVE-2024-6387
 - **Exploited:** No
 - **Data accessed:** No
