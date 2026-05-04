@@ -10,7 +10,7 @@
 
 ## Severity: CRITICAL — Critical Infrastructure
 
-Fortinet FortiOS VPN endpoint identified on Bay Area public transit authority network.
+Fortinet FortiOS VPN endpoint identified on public transit authority network.
 Three CVSS 9.8 vulnerabilities from CISA's Known Exploited Vulnerabilities catalog apply
 to the FortiOS product family. All three have mandatory remediation deadlines that have
 already expired. Specific version and patch status unconfirmed — CISA disclosure submitted.
@@ -22,7 +22,7 @@ already expired. Specific version and patch status unconfirmed — CISA disclosu
 | Field | Value |
 |---|---|
 | Sector | Public transportation — critical infrastructure |
-| Location | [REDACTED] — Bay Area, CA |
+| Location | [REDACTED] |
 | Endpoint type | SSL VPN concentrator |
 | Software | Fortinet FortiOS |
 | Identification method | Shodan CPE record + SSL certificate identity verification |
