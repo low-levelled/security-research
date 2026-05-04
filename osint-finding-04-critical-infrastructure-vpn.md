@@ -22,7 +22,7 @@ already expired. Specific version and patch status unconfirmed — CISA disclosu
 | Field | Value |
 |---|---|
 | Sector | Public transportation — critical infrastructure |
-| Location | Oakland, CA |
+| Location | [REDACTED] — Bay Area, CA |
 | Endpoint type | SSL VPN concentrator |
 | Software | Fortinet FortiOS |
 | Identification method | Shodan CPE record + SSL certificate identity verification |
