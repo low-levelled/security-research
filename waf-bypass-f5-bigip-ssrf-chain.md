@@ -25,13 +25,13 @@ The WAF returns `error.htm?support_id=...` (F5 ASM violation page) when it block
 | Loopback (`127.0.0.1`) | `error.htm?support_id=...` | WAF blocked |
 | Link-local (`169.254.169.254`) | `error.htm?support_id=...` | WAF blocked |
 | IPv6-mapped (`[::ffff:10.x.x.x]`) | `error.htm?support_id=...` | WAF blocked |
-| Hex dotted (`0x0a.0x5a.0x2a.0x47`) | `/Error.htm` | **WAF bypassed** |
-| Hex integer (`0x0a5a2a47`) | `/Error.htm` | **WAF bypassed** |
-| Octal (`012.0132.052.0107`) | `/Error.htm` | **WAF bypassed** |
-| Mixed (`10.0x5a.42.71`) | `/Error.htm` | **WAF bypassed** |
+| Hex dotted (`0x0a.0x5a.0x2a.0xNN`) | `/Error.htm` | **WAF bypassed** |
+| Hex integer (`0x0a5a2aNN`) | `/Error.htm` | **WAF bypassed** |
+| Octal (`012.0132.052.0NNN`) | `/Error.htm` | **WAF bypassed** |
+| Mixed (`10.0x5a.42.NN`) | `/Error.htm` | **WAF bypassed** |
 
 ### Additional Finding
-The WAF blocks hex-encoded localhost (`0x7f000001`) but misses hex-encoded RFC 1918 addresses (`0x0a5a2a47`). This demonstrates inconsistent normalization — the WAF was updated to catch some hex patterns but not all.
+The WAF blocks hex-encoded localhost (`0x7f0000NN`) but misses hex-encoded RFC 1918 addresses (`0x0a5a2aNN`). This demonstrates inconsistent normalization — the WAF was updated to catch some hex patterns but not all.
 
 ### Impact
 The F5 ASM SSRF protection rule is ineffective against standard IP encoding techniques. An attacker who chains this with any server-side URL-fetching functionality can target internal backend servers while evading WAF detection and logging.
